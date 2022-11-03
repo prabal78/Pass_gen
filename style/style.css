@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Popins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(175, 113, 232);
+}
+.container{
+    width: 450px;
+    background: white;
+    border-radius: 8px;
+}
+.container h2{
+    text-align: center;
+    /* margin: 15px 0px; */
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(161, 158, 158);
+}
+.wrapper{
+    margin: 1.25rem 1.75rem;
+}
+.wrapper .input-box{
+    position: relative;
+}
+.input-box input{
+    width:100%;
+    height: 53px;
+    color: black;
+    background: none;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0 2.25rem 0 1rem;
+}
+.input-box .material-symbols-rounded{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.input-box span{
+    position: absolute;
+    right: 13px;
+    cursor: pointer;
+    line-height: 53px;
+    color: #707070;
+}
+.wrapper .pass-indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #f1c80b;
+}
+.wrapper .pass-length{
+    margin: 1.3rem 0 1rem;
+
+}
+.pass-length .details{
+    display: flex;
+    justify-content: space-between;
+}
+.pass-length input{
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+.pass-setting .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.pass-setting .options .option{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 2);
+    margin-bottom: 1rem;
+}
+.options .option input:first-child{
+    pointer-events: none;
+}
+.options .option input:first-child input{
+    opacity: 0.7;
+}
+.options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.options .option label{
+    cursor: pointer;
+    padding-left: 0.63rem;
+
+}
+.wrapper .generate-btn{
+    width: 100%;
+    padding: 0.94rem 0;
+    cursor: pointer;
+    background-color: rgb(198, 153, 240);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin: 0.94rem 0 1.3rem;
+}
