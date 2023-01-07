@@ -45,8 +45,12 @@ body {
 }
 .input-box .material-symbols-rounded{
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 5px;
+}
+.input-box .material-symbols-rounded:hover{
+    font-size: 1.8rem;
+   color: black;
 }
 .input-box span{
     position: absolute;

@@ -49,10 +49,15 @@ const genratepassword = () => {
     input.value = randomPassword;   
 }
 const copyall = ()=>{
-    console.log("perfect")
-    if(input.value=== input.value){
+    console.log(input.length)
+   
+    
+    if(input.length!== null){
         navigator.clipboard.writeText(input.value)
-         
+        alert("Password Copy")
+    }
+    else{
+        alert("Select a Setting")    
     }
 }
 
